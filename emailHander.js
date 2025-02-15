@@ -42,7 +42,8 @@ const sendEmail  = async (email,body) => {
     context: {
       email: body.email,
       phone:body.phone,
-      name:body.name
+      name:body.name,
+      message:body.message
     },
   };
   try {
