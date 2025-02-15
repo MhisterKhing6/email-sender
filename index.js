@@ -12,7 +12,7 @@ app.post("/send-email", async (req, res) => {
     let body = req.body
     if(!(body.email && body.phone && body.name && body.message))
             return res.status(400).json({message: "sender email and message required"})
-     sendEmail("dondecency11@gmail.com", body)
+     sendEmail("stepcoredev@gmail.com", body)
      return res.status(200).json({"message": "success"})
 })
 
